@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Conversion</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="container">
+
+    <h1>~~Image Conversion~~</h1>
+    <p>CSS nya agak kentang yah pak mff</p>
+    <div class="select-option">
+        <h3 class="selectTitle">Choose Conversion Type</h3>
+        <select id="conversionType">
+        <option value="grayscale">Grayscale</option>
+        <option value="blur">Blur</option>
+        </select> 
+    </div>
+    
+    <div class="fileCont">
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+    
+    <div id="images">
+      <div>
+        <h3 id="inputLabel">Original Image</h3>
+        <img id="input" src="">
+      </div>
+      <canvas id="canvas" style="display: none;"></canvas>
+      <div>
+        <h3 id="outputLabel">Converted Image</h3>
+        <img id="output" src="">
+      </div>
+    </div>
+
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
